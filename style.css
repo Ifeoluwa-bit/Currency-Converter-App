@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+     margin: 0; padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #181444;
+}
+
+.container{
+    width: 22rem;
+    background: #fff;
+    padding: 1.8rem;
+    border-radius: .5rem;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.container form{
+    margin: 3rem 0 1.2rem 0;
+}
+
+form :where(input, select, button){
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+}
+
+form p{
+    margin-bottom: .3rem;
+    font-size: 1.1rem;
+}
+
+form input{
+    border: .1rem solid #999;
+    height: 3rem;
+    padding: 0 .9rem;
+    font-size: 1rem;
+}
+
+form input:focus{
+    border: .2rem solid #181444;
+    padding: 0 .8rem;
+}
+
+form .drop-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+}
+
+.drop-list .select-box{
+    display: flex;
+    width: 6.8rem;
+    height: 2.6rem;
+    align-items: center;
+    justify-content: center;
+    border: .1rem solid #999;
+    border-radius: .3rem;
+}
+
+.select-box select{
+    width: auto;
+    font-size: .9rem;
+    margin: 0 -5px 0 5px;
+}
+
+.select-box select::-webkit-scrollbar{
+    width: .5rem;
+}
+
+.select-box select::-webkit-scrollbar-track{
+    background: #fff;
+}
+
+.select-box select::-webkit-scrollbar-thumb{
+    background: #181444;
+    border-right: .2rem solid #fff;
+    border-radius: .5rem;
+}
+
+.select-box img{
+    max-width: 1.5rem;
+}
+
+.drop-list .icon{
+    font-size: 1.3rem;
+    margin-top: 1.8rem;
+    cursor: pointer;
+}
+
+form .exchange-rate{
+    font-size: 1rem;
+    margin: 1.2rem 0 1.8rem;
+}
+
+form button{
+    height: 3.1rem;
+    background: #181444;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*media queries*/
+@media(max-width:414px){
+    .container{
+        width: 20rem;
+        padding: 1.2rem 1.7rem;
+    }
+
+    .container h1{
+        font-size: 1.5rem;
+    }
+
+    .container form{
+        margin: 1.2rem 0 1.5rem;
+    }
+}
+
+@media(max-width:360px){
+    .container{
+        width: 18rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .container form{
+        margin: 1rem 0 1.2rem;
+    }
+
+    .container h1{
+        font-size: 1.3rem;
+    }
+
+    form p{
+        font-size: .8rem;
+    }
+    
+}
+
+@media(max-width:280px){
+    .container{
+        width: 17rem;
+        padding: .7rem 1.2rem;
+    }
+
+    .container h1{
+        font-size: 1.1rem;
+    }
+    
+}
